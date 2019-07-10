@@ -21,7 +21,7 @@
 											Подробнее
 										</a>
 									</div>
-									<div class="welcome__item-button">
+									<div class="welcome__item-button callback">
 										Связаться с нами
 									</div>
 								</div>

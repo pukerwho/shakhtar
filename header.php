@@ -80,10 +80,12 @@
         <div class="row">
           <div class="col-md-12">
             <div class="header__main-content">
-              <div class="header__logo">
-                <img src="<?php bloginfo('template_url') ?>/img/logo.svg" alt="" width="50px">
-                LOGO
-              </div>
+              <a href="<?php echo home_url(); ?>">
+                <div class="header__logo">
+                  <img src="<?php bloginfo('template_url') ?>/img/logo.svg" alt="" width="50px">
+                  LOGO
+                </div>
+              </a>
               <div class="header__menu">
                 <?php wp_nav_menu([
                   'theme_location' => 'head_menu',
@@ -91,10 +93,26 @@
                   'menu_id' => 'head_menu',
                 ]); ?>
               </div>
+              <div class="mobile-show">
+                <div class="mobile-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <div class="mobile-show">
+    <div class="mobile-cover">
+      <?php wp_nav_menu([
+        'theme_location' => 'footer_menu',
+        'container' => 'nav',
+        'menu_id' => 'footer_menu',
+      ]); ?> 
+    </div>
+  </div>
   <section id="content" role="main">
