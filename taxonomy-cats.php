@@ -23,7 +23,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mb-5">
 				<div class="col-md-12">
 					<div class="table-responsive">
 					 	<table>
@@ -53,7 +53,7 @@
 			</div>
 		<?php else: ?>
 			<!-- ВЛОЖЕННЫЕ ТОВАРЫ В ТАКСОНОМИЮ -->
-			<div class="row">
+			<div class="row mb-5">
 				<?php 
 				$current_term = get_queried_object_id();
 			  $custom_query_news = new WP_Query( array( 
