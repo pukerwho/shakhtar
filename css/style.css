@@ -9957,10 +9957,8 @@ tbody td {
       margin-bottom: 0; }
     .main_catalog__left-item:hover {
       background-color: #f27022; }
-      .main_catalog__left-item:hover .main_catalog__left-title {
+      .main_catalog__left-item:hover .main_catalog__left-title, .main_catalog__left-item:hover .main_catalog__left-sub {
         color: #ffffff; }
-    .main_catalog__left-item-active .main_catalog__left-sub {
-      display: block; }
   .main_catalog__left-title {
     color: #191b1c;
     font-size: 18px;

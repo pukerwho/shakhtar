@@ -45,8 +45,14 @@ Template Name: Страница КОНТАКТЫ
 						Позвонить
 					</div>
 					<div class="contact__item-text">
-						<div><a href="tel:0999999911">099-999-9911</a> ;</div>
-            <div><a href="tel:0999999911">099-999-9911</a></div>
+						<?php $contact_phones = carbon_get_the_post_meta('crb_contact_phones');
+						foreach($contact_phones as $contact_phone): ?>
+							<div>
+								<a href="tel:<?php echo $contact_phone['crb_contact_phone'] ?>">
+									<?php echo $contact_phone['crb_contact_phone'] ?>
+								</a>
+							</div>
+            <?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -58,9 +64,12 @@ Template Name: Страница КОНТАКТЫ
 					<div class="contact__item-title">
 						Написать
 					</div>
-					<div class="contact__item-text">
-						<a href="mailto:mail@site.com">mail@site.com</a>
-					</div>
+					<?php $contact_emails = carbon_get_the_post_meta('crb_contact_emails');
+					foreach($contact_emails as $contact_email): ?>
+						<div class="contact__item-text">
+							<a href="mailto:<?php echo $contact_email['crb_contact_email'] ?>"><?php echo $contact_email['crb_contact_email'] ?></a>
+						</div>
+					<?php endforeach; ?>
 				</div>
 			</div>
 			<div class="contact__item">
@@ -72,7 +81,7 @@ Template Name: Страница КОНТАКТЫ
 						Время работы
 					</div>
 					<div class="contact__item-text">
-						Пн-Пт: 09.00 - 19.00
+						<?php echo carbon_get_the_post_meta('crb_contact_time') ?>
 					</div>
 				</div>
 			</div>

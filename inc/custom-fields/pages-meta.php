@@ -15,13 +15,28 @@ function crb_page_theme_options() {
 		        Field::make( 'text', 'crb_main_slider_title', 'Заголовок' ),
             Field::make( 'text', 'crb_main_slider_subtitle', 'Подзаголовок' ),
             Field::make( 'text', 'crb_main_slider_link', 'Кнопка подробнее (Ссылка)' ),
-		    ) ),
-      Field::make( 'select', 'crb_main_slider_position', 'Расположение' )
-        ->set_options( array(
-          'center' => 'Центр',
-          'left' => 'Лево',
-          'right' => 'Право',
-        ) ),
+            Field::make( 'select', 'crb_main_slider_position', 'Расположение' )->set_options( array(
+                'center' => 'Центр',
+                'left' => 'Лево',
+                'right' => 'Право',
+              ) 
+            ),
+		      ) 
+        ),
+    ) );
+  Container::make( 'post_meta', 'More' )
+    ->where( 'post_type', '=', 'page' )
+    ->where( 'post_template', '=', 'tpl_contact.php' )
+    ->add_fields( array(
+      Field::make( 'complex', 'crb_contact_phones', 'Телефоны' )->add_fields( array(
+          Field::make( 'text', 'crb_contact_phone', 'Номер' ),
+      )),
+      Field::make( 'complex', 'crb_contact_emails', 'Почтовые ящики' )->add_fields( array(
+          Field::make( 'text', 'crb_contact_email', 'Email' ),
+      )),
+      Field::make( 'text', 'crb_contact_time', 'Время работы' ),
+      Field::make( 'text', 'crb_contact_whatsapp', 'Whatsapp' ),
+      Field::make( 'text', 'crb_contact_viber', 'Viber' ),
     ) );
 }
 

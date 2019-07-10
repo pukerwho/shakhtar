@@ -26,7 +26,7 @@
 												'tax_query' => array(
 											    array(
 										        'taxonomy' => 'cats',
-												    'terms' => $main_cat->name,
+												    'terms' => $main_cat->term_id,
 										        'field' => 'term_id',
 										        'include_children' => true,
 										        'operator' => 'IN'
