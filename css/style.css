@@ -10149,6 +10149,49 @@ tbody td {
   color: #191b1c;
   font-size: 24px;
   text-transform: uppercase; }
+.single-post {
+  background-color: #fdfdfd; }
+  .single-post__content {
+    position: relative;
+    background-color: #ffffff;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    z-index: 0;
+    padding: 30px 45px; }
+    .single-post__content:before {
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      content: "";
+      background: #fff;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      -webkit-border-radius: 16px;
+      border-radius: 16px; }
+    .single-post__content::after {
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      content: "";
+      background: #fff;
+      -webkit-transform: rotate(1.1deg);
+      -ms-transform: rotate(1.1deg);
+      transform: rotate(1.1deg);
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: 0.9;
+      -webkit-border-radius: 16px;
+      border-radius: 16px; }
+    .single-post__content-inner {
+      position: relative; }
 
 .tax__box {
   background-color: #ffffff;
