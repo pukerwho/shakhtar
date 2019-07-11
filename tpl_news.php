@@ -39,17 +39,6 @@ Template Name: Страница НОВОСТИ
 				</div>
 			<?php endwhile; endif; wp_reset_postdata(); ?>
 		</div>
-		<div class="row mb-5">
-			<div class="col-md-12">
-				<div class="d-flex justify-content-center">
-					<a href="<?php echo get_page_url('tpl_news') ?>">
-						<div class="welcome__item-button news__button">
-							Все новости
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 
