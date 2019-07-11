@@ -25,30 +25,7 @@
 			</div>
 			<div class="row mb-5">
 				<div class="col-md-12">
-					<div class="table-responsive">
-					 	<table>
-					 		<thead class="thead">
-					 			<tr>
-	                <th>Наименование</th>
-	              	<th>Вес м/п</th>
-	              	<th>Цена за метр</th>
-	              	<th>Цена за тонну</th>
-	              </tr>
-	            </thead>
-	            <tbody>
-	            	<?php 
-	          		$products = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products');
-	          		foreach( $products as $product ): ?>
-							    <tr class="tr-line">
-							      <td><?php echo $product['crb_cats_product_title'] ?></td>
-							      <td class="weight-metr"><?php echo $product['crb_cats_product_weight_metr'] ?></td>
-							      <td class="price-metr"></td>
-							      <td class="price-tonna"><?php echo $product['crb_cats_product_price_tonna'] ?></td>
-							    </tr>
-						    <?php endforeach; ?>
-						  </tbody>
-					 	</table>
-					</div>
+					<?php get_template_part('blocks/tax/tables') ?>
 				</div>
 			</div>
 		<?php else: ?>
