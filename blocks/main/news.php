@@ -34,7 +34,7 @@
 		<div class="row mb-5">
 			<div class="col-md-12">
 				<div class="d-flex justify-content-center">
-					<a href="/category/news">
+					<a href="<?php echo get_page_url('tpl_news') ?>">
 						<div class="welcome__item-button news__button">
 							Все новости
 						</div>
