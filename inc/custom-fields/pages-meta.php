@@ -23,6 +23,11 @@ function crb_page_theme_options() {
             ),
 		      ) 
         ),
+      Field::make( 'complex', 'crb_whyus', 'Наши преимущества' )->add_fields( array(
+        Field::make( 'image', 'crb_whyus_icon', 'Иконка' )->set_value_type( 'url'),
+        Field::make( 'text', 'crb_whyus_text', 'Текст' ),
+        )
+      )
     ) );
   Container::make( 'post_meta', 'More' )
     ->where( 'post_type', '=', 'page' )

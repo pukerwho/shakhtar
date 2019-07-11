@@ -16,6 +16,10 @@ Template Name: Страница ГЛАВНАЯ
 	<?php get_template_part('blocks/main/catalog') ?>
 </section>
 
+<section id="main_whyus">
+	<?php get_template_part('blocks/main/whyus') ?>
+</section>
+
 <section id="main_content">
 	<div class="container">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
