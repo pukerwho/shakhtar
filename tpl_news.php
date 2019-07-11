@@ -6,7 +6,7 @@ Template Name: Страница НОВОСТИ
 
 <?php get_header(); ?>
 
-<div class="news">
+<div class="news pt-5 pb-3">
 	<div class="container">
 		<div class="row mb-4">
 			<div class="col-md-12">
