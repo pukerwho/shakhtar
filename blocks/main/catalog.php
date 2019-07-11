@@ -1,9 +1,12 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<h2 class="text-center mb-5">
+		<div class="col-md-12 p-relative">
+			<h2 class="text-center font-weight-bold mb-5">
 				Каталог продукции	
 			</h2>
+			<div class="h2-after">
+				Каталог
+			</div>
 		</div>
 	</div>
 	<div class="row mb-5">
