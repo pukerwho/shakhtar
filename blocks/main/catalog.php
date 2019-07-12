@@ -302,6 +302,7 @@
 						) );
 						if ($custom_query_catalog_products->have_posts()) : while ($custom_query_catalog_products->have_posts()) : $custom_query_catalog_products->the_post(); ?>
 							<div id="tableShow-<?php echo get_the_id(); ?>" class="tabcontent">
+								<?php the_title(); ?>
 								<?php get_template_part('blocks/products/templates') ?>
 							</div>
 					<?php endwhile; endif; wp_reset_postdata(); ?>
