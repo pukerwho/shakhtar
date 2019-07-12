@@ -32,4 +32,17 @@
 	<p><?php _e('Ничего не найдено'); ?></p>
 <?php endif; ?>
 
+<div class="d-flex justify-content-center mb-5">
+	<div class="welcome__item-button callback">
+		Заказать
+	</div>
+</div>
+
+<section id="main_whyus">
+	<?php get_template_part('blocks/main/whyus') ?>
+</section>
+
+<section id="main_news">
+	<?php get_template_part('blocks/main/news') ?>
+</section>
 <?php get_footer(); ?>

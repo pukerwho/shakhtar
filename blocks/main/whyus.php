@@ -27,18 +27,29 @@
 			</div>
 		</div>
 		<div class="row pt-4">
-			<?php $whyus = carbon_get_the_post_meta('crb_whyus');
-			foreach($whyus as $us): ?>
-			<div class="col-md-4 mb-3">
-				<div class="whyus__item">
-					<div class="whyus__item-icon">
-						<img src="<?php echo $us['crb_whyus_icon'] ?>" alt="">
-					</div>
-					<div class="whyus__item-text">
-						<?php echo $us['crb_whyus_text'] ?>
+			<?php 
+      $args_main_page = [
+          'post_type' => 'page',
+          'fields' => 'ids',
+          'nopaging' => true,
+          'meta_key' => '_wp_page_template',
+          'meta_value' => 'tpl_main.php'
+      ];
+      $main_pages = get_posts( $args_main_page );
+      foreach ( $main_pages as $main_page ): ?>
+				<?php $whyus = carbon_get_post_meta($main_page, 'crb_whyus');
+				foreach($whyus as $us): ?>
+				<div class="col-md-4 mb-3">
+					<div class="whyus__item">
+						<div class="whyus__item-icon">
+							<img src="<?php echo $us['crb_whyus_icon'] ?>" alt="">
+						</div>
+						<div class="whyus__item-text">
+							<?php echo $us['crb_whyus_text'] ?>
+						</div>
 					</div>
 				</div>
-			</div>
+				<?php endforeach; ?>
 			<?php endforeach; ?>
 		</div>
 	</div>

@@ -20,7 +20,7 @@ Template Name: Страница ГЛАВНАЯ
 	<?php get_template_part('blocks/main/whyus') ?>
 </section>
 
-<section id="main_content" class="py-5" style="background-color: #fdfdfd;">
+<section id="main_content" class="pt-5" style="background-color: #fdfdfd;">
 	<div class="container">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="row">

@@ -1,4 +1,4 @@
-<div class="news">
+<div class="news pt-5">
 	<div class="container">
 		<div class="row mb-4">
 			<div class="col-md-12">
