@@ -51,7 +51,7 @@
 						</div>
 					<?php endforeach; ?>
 				</div>
-				<div class="main_catalog__right">
+				<div id="catalog-right" class="main_catalog__right">
 					<?php $main_table_cats = get_terms( array( 'taxonomy' => 'cats', 'parent' => 0, 'hide_empty' => false ) );
 					foreach ( $main_table_cats as $main_table_cat ): ?>
 						<?php if ($main_table_cat->count === 0): ?>
@@ -296,15 +296,15 @@
 							</div>
 						<?php endif; ?>
 					<?php endforeach; ?>
-						<?php
-							$custom_query_catalog_products = new WP_Query( array( 
-								'post_type' => 'products',
-							) );
-							if ($custom_query_catalog_products->have_posts()) : while ($custom_query_catalog_products->have_posts()) : $custom_query_catalog_products->the_post(); ?>
-								<div id="tableShow-<?php echo get_the_id(); ?>" class="tabcontent">
-									<?php get_template_part('blocks/products/templates') ?>
-								</div>
-						<?php endwhile; endif; wp_reset_postdata(); ?>
+					<?php
+						$custom_query_catalog_products = new WP_Query( array( 
+							'post_type' => 'products',
+						) );
+						if ($custom_query_catalog_products->have_posts()) : while ($custom_query_catalog_products->have_posts()) : $custom_query_catalog_products->the_post(); ?>
+							<div id="tableShow-<?php echo get_the_id(); ?>" class="tabcontent">
+								<?php get_template_part('blocks/products/templates') ?>
+							</div>
+					<?php endwhile; endif; wp_reset_postdata(); ?>
 				</div>
 			</div>
 		</div>
