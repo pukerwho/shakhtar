@@ -121,12 +121,12 @@
       	<?php 
     		$cats_products_five = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon_five');
     		foreach( $cats_products_five as $cats_product_five ): ?>
-			    <tr class="tr-line">
+			    <tr class="shablon_five">
 			      <td><?php echo $cats_product_five['crb_cats_product_shablon_five_title'] ?></td>
-			      <td><?php echo $cats_product_five['crb_cats_product_shablon_five_ves'] ?></td>
-			      <td><?php echo $cats_product_five['crb_cats_product_shablon_five_price_metr'] ?></td>
+			      <td class="shablon_five-ves"><?php echo $cats_product_five['crb_cats_product_shablon_five_ves'] ?></td>
+			      <td class="shablon_five-price"></td>
 			      <td><?php echo $cats_product_five['crb_cats_product_shablon_five_price_list'] ?></td>
-			      <td><?php echo $cats_product_five['crb_cats_product_shablon_five_price_tonna'] ?></td>
+			      <td class="shablon_five-tonna"><?php echo $cats_product_five['crb_cats_product_shablon_five_price_tonna'] ?></td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>
@@ -149,11 +149,11 @@
       	<?php 
     		$cats_products_six = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon_six');
     		foreach( $cats_products_six as $cats_product_six ): ?>
-			    <tr class="tr-line">
+			    <tr class="shablon_six">
 			      <td><?php echo $cats_product_six['crb_cats_product_shablon_six_title'] ?></td>
-			      <td><?php echo $cats_product_six['crb_cats_product_shablon_six_weight_metr'] ?></td>
-			      <td></td>
-			      <td><?php echo $cats_product_six['crb_cats_product_shablon_six_price_tonna'] ?></td>
+			      <td class="shablon_six-ves"><?php echo $cats_product_six['crb_cats_product_shablon_six_weight_metr'] ?></td>
+			      <td class="shablon_six-price"></td>
+			      <td class="shablon_six-tonna"><?php echo $cats_product_six['crb_cats_product_shablon_six_price_tonna'] ?></td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>
@@ -202,10 +202,10 @@
       	<?php 
     		$cats_products_eight = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon_eight');
     		foreach( $cats_products_eight as $cats_product_eight ): ?>
-			    <tr class="tr-line">
+			    <tr class="shablon_eight">
 			      <td><?php echo $cats_product_eight['crb_cats_product_shablon_eight_title'] ?></td>
-			      <td></td>
-			      <td><?php echo $cats_product_eight['crb_cats_product_shablon_eight_price'] ?></td>
+			      <td class="shablon_eight-price"></td>
+			      <td class="shablon_eight-rulon"><?php echo $cats_product_eight['crb_cats_product_shablon_eight_price'] ?></td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>

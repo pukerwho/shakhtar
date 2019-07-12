@@ -121,12 +121,12 @@
       	<?php 
     		$products_five = carbon_get_the_post_meta('crb_products_shablon_five');
     		foreach( $products_five as $product_five ): ?>
-			    <tr class="tr-line">
+			    <tr class="shablon_five">
 			      <td><?php echo $product_five['crb_product_shablon_five_title'] ?></td>
-			      <td><?php echo $product_five['crb_product_shablon_five_ves'] ?></td>
-			      <td></td>
+			      <td class="shablon_five-ves"><?php echo $product_five['crb_product_shablon_five_ves'] ?></td>
+			      <td class="shablon_five-price"></td>
 			      <td><?php echo $product_five['crb_product_shablon_five_price_list'] ?></td>
-			      <td><?php echo $product_five['crb_product_shablon_five_price_tonna'] ?></td>
+			      <td class="shablon_five-tonna"><?php echo $product_five['crb_product_shablon_five_price_tonna'] ?></td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>
@@ -149,11 +149,11 @@
       	<?php 
     		$products_six = carbon_get_the_post_meta('crb_products_shablon_six');
     		foreach( $products_six as $product_six ): ?>
-			    <tr class="tr-line">
+			    <tr class="shablon_six">
 			      <td><?php echo $product_six['crb_product_shablon_six_title'] ?></td>
-			      <td><?php echo $product_six['crb_product_shablon_six_weight_metr'] ?></td>
-			      <td></td>
-			      <td><?php echo $product_six['crb_product_shablon_six_price_tonna'] ?></td>
+			      <td class="shablon_six-ves"><?php echo $product_six['crb_product_shablon_six_weight_metr'] ?></td>
+			      <td class="shablon_six-price"></td>
+			      <td class="shablon_six-tonna"><?php echo $product_six['crb_product_shablon_six_price_tonna'] ?></td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>
@@ -202,10 +202,10 @@
       	<?php 
     		$products_eight = carbon_get_the_post_meta('crb_products_shablon_eight');
     		foreach( $products_eight as $product_eight ): ?>
-			    <tr class="tr-line">
+			    <tr class="shablon_eight">
 			      <td><?php echo $product_eight['crb_product_shablon_eight_title'] ?></td>
-			      <td></td>
-			      <td><?php echo $product_eight['crb_product_shablon_eight_price'] ?></td>
+			      <td class="shablon_eight-price"></td>
+			      <td class="shablon_eight-rulon"><?php echo $product_eight['crb_product_shablon_eight_price'] ?></td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>

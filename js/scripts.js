@@ -63,6 +63,43 @@ $('.tr-line').each(function(){
   priceMetrHtml.html(priceMetr);
 })
 
+//Пятый шаблон калькулятор
+$('.shablon_five').each(function(){
+  var fiveVes = $(this).find('.shablon_five-ves');
+  var fiveVesValue = fiveVes.text();
+  var fiveTonna = $(this).find('.shablon_five-tonna');
+  var fiveTonnaValue = fiveTonna.text();
+  
+  fivePrice = fiveTonnaValue/(fiveVesValue*1000);
+  fivePrice = fivePrice.toFixed(2);
+  var fivePriceHtml = $(this).find('.shablon_five-price');
+  fivePriceHtml.html(fivePrice);
+});
+
+//Шестой шаблон калькулятор
+$('.shablon_six').each(function(){
+  var sixVes = $(this).find('.shablon_six-ves');
+  var sixVesValue = sixVes.text();
+  var sixTonna = $(this).find('.shablon_six-tonna');
+  var sixTonnaValue = sixTonna.text();
+  
+  sixPrice = sixTonnaValue/(1000/sixVesValue)
+  sixPrice = sixPrice.toFixed(2);
+  var sixPriceHtml = $(this).find('.shablon_six-price');
+  sixPriceHtml.html(sixPrice);
+});
+
+//Восьмой шаблон калькулятор
+$('.shablon_eight').each(function(){
+  var eightRulon = $(this).find('.shablon_eight-rulon');
+  var eightRulonValue = eightRulon.text();
+  
+  eightPrice = eightRulonValue/10
+  eightPrice = eightPrice.toFixed(2);
+  var eightPriceHtml = $(this).find('.shablon_eight-price');
+  fivePriceHtml.html(eightPrice);
+});
+
 //TABLE SORT
 $(document).on('click', 'th', function() {
   console.log(this);
