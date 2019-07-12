@@ -133,3 +133,105 @@
 		</table>
 	</div>
 <?php endif; ?>
+<!-- six shablon -->
+<?php if(carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon') === 'cats_shablon_six'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Вес 1м.пог кг</th>
+        	<th>Цена за 1м.пог</th>
+        	<th>Цена за 1 бухту (1т)</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$cats_products_six = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon_six');
+    		foreach( $cats_products_six as $cats_product_six ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $cats_product_six['crb_cats_product_shablon_six_title'] ?></td>
+			      <td><?php echo $cats_product_six['crb_cats_product_shablon_six_weight_metr'] ?></td>
+			      <td></td>
+			      <td><?php echo $cats_product_six['crb_cats_product_shablon_six_price_tonna'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
+<!-- seven shablon -->
+<?php if(carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon') === 'cats_shablon_seven'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Страна-производитель</th>
+        	<th>Гарантия лет</th>
+        	<th>Цена за м2</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$cats_products_seven = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon_seven');
+    		foreach( $cats_products_seven as $cats_product_seven ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $cats_product_seven['crb_cats_product_shablon_seven_title'] ?></td>
+			      <td><?php echo $cats_product_seven['crb_cats_product_shablon_seven_country'] ?></td>
+			      <td><?php echo $cats_product_seven['crb_cats_product_shablon_seven_garantia'] ?></td>
+			      <td><?php echo $cats_product_seven['crb_cats_product_shablon_seven_price_metr'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
+<!-- eight shablon -->
+<?php if(carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon') === 'cats_shablon_eight'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Цена за 1 метр</th>
+        	<th>Цена за 1 рулон</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$cats_products_eight = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon_eight');
+    		foreach( $cats_products_eight as $cats_product_eight ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $cats_product_eight['crb_cats_product_shablon_eight_title'] ?></td>
+			      <td></td>
+			      <td><?php echo $cats_product_eight['crb_cats_product_shablon_eight_price'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
+<!-- nine shablon -->
+<?php if(carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon') === 'cats_shablon_nine'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Цена за 1 рулон</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$cats_products_nine = carbon_get_term_meta(get_queried_object_id(), 'crb_cats_products_shablon_nine');
+    		foreach( $cats_products_nine as $cats_product_nine ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $cats_product_nine['crb_cats_product_shablon_nine_title'] ?></td>
+			      <td><?php echo $cats_product_nine['crb_cats_product_shablon_nine_price'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>

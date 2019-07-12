@@ -16,6 +16,10 @@ function crb_term_options() {
           'cats_shablon_third' => 'Цена за 1м2, Цена за 1лист (сетка)',
           'cats_shablon_fourth' => 'Толщ мм, Цинк грн/м2, Полиэстер, грн/м2, Матполиэстер, грн/м2, Структурный дуб, грн/м2',
           'cats_shablon_five' => 'Вес 1м/кв, Цена за м2, цена за 1 лист, Цена за 1 т, (листы)',
+          'cats_shablon_six' => 'Вес 1м.пог кг Цена за 1м.пог Цена за 1 бухту (1т)',
+          'cats_shablon_seven' => 'Страна-производитель Гарантия лет Цена за м2',
+          'cats_shablon_eight' => 'Цена за 1 метр Цена за 1 рулон',
+          'cats_shablon_nine' => 'Цена за 1 рулон',
       ) ),
       Field::make( 'complex', 'crb_cats_products_shablon_first', 'Продукты' )
         ->add_fields( array(
@@ -83,6 +87,57 @@ function crb_term_options() {
           array(
             'field' => 'crb_cats_products_shablon',
             'value' => 'cats_shablon_five',
+            'compare' => '=',
+          ),
+        ) ),
+      Field::make( 'complex', 'crb_cats_products_shablon_six', 'Продукты' )
+        ->add_fields( array(
+          Field::make( 'text', 'crb_cats_product_shablon_six_title', 'Наименование' ),
+          Field::make( 'text', 'crb_cats_product_shablon_six_weight_metr', 'Вес м/п кг' ),
+          Field::make( 'text', 'crb_cats_product_shablon_six_price_tonna', 'Цена за 1 бухту (1т)' ),
+      ) )->set_conditional_logic( array(
+        'relation' => 'AND',
+          array(
+            'field' => 'crb_cats_products_shablon',
+            'value' => 'cats_shablon_six',
+            'compare' => '=',
+          ),
+        ) ),
+      Field::make( 'complex', 'crb_cats_products_shablon_seven', 'Продукты' )
+        ->add_fields( array(
+          Field::make( 'text', 'crb_cats_product_shablon_seven_title', 'Наименование' ),
+          Field::make( 'text', 'crb_cats_product_shablon_seven_country', 'Страна-производитель' ),
+          Field::make( 'text', 'crb_cats_product_shablon_seven_garantia', 'Гарантия лет' ),
+          Field::make( 'text', 'crb_cats_product_shablon_seven_price_metr', 'Цена за м2' ),
+      ) )->set_conditional_logic( array(
+        'relation' => 'AND',
+          array(
+            'field' => 'crb_cats_products_shablon',
+            'value' => 'cats_shablon_seven',
+            'compare' => '=',
+          ),
+        ) ),
+      Field::make( 'complex', 'crb_cats_products_shablon_eight', 'Продукты' )
+        ->add_fields( array(
+          Field::make( 'text', 'crb_cats_product_shablon_eight_title', 'Наименование' ),
+          Field::make( 'text', 'crb_cats_product_shablon_eight_price', 'Цена за 1 рулон' ),
+      ) )->set_conditional_logic( array(
+        'relation' => 'AND',
+          array(
+            'field' => 'crb_cats_products_shablon',
+            'value' => 'cats_shablon_eight',
+            'compare' => '=',
+          ),
+        ) ),
+      Field::make( 'complex', 'crb_cats_products_shablon_nine', 'Продукты' )
+        ->add_fields( array(
+          Field::make( 'text', 'crb_cats_product_shablon_nine_title', 'Наименование' ),
+          Field::make( 'text', 'crb_cats_product_shablon_nine_price', 'Цена за 1 рулон' ),
+      ) )->set_conditional_logic( array(
+        'relation' => 'AND',
+          array(
+            'field' => 'crb_cats_products_shablon',
+            'value' => 'cats_shablon_nine',
             'compare' => '=',
           ),
         ) ),

@@ -124,9 +124,111 @@
 			    <tr class="tr-line">
 			      <td><?php echo $product_five['crb_product_shablon_five_title'] ?></td>
 			      <td><?php echo $product_five['crb_product_shablon_five_ves'] ?></td>
-			      <td><?php echo $product_five['crb_product_shablon_five_price_metr'] ?></td>
+			      <td></td>
 			      <td><?php echo $product_five['crb_product_shablon_five_price_list'] ?></td>
 			      <td><?php echo $product_five['crb_product_shablon_five_price_tonna'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
+<!-- six shablon -->
+<?php if(carbon_get_the_post_meta('crb_products_shablon') === 'shablon_six'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Вес 1м.пог кг</th>
+        	<th>Цена за 1м.пог</th>
+        	<th>Цена за 1 бухту (1т)</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$products_six = carbon_get_the_post_meta('crb_products_shablon_six');
+    		foreach( $products_six as $product_six ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $product_six['crb_product_shablon_six_title'] ?></td>
+			      <td><?php echo $product_six['crb_product_shablon_six_weight_metr'] ?></td>
+			      <td></td>
+			      <td><?php echo $product_six['crb_product_shablon_six_price_tonna'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
+<!-- seven shablon -->
+<?php if(carbon_get_the_post_meta('crb_products_shablon') === 'shablon_seven'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Страна-производитель</th>
+        	<th>Гарантия лет</th>
+        	<th>Цена за м2</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$products_seven = carbon_get_the_post_meta('crb_products_shablon_seven');
+    		foreach( $products_seven as $product_seven ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $product_seven['crb_product_shablon_seven_title'] ?></td>
+			      <td><?php echo $product_seven['crb_product_shablon_seven_country'] ?></td>
+			      <td><?php echo $product_seven['crb_product_shablon_seven_garantia'] ?></td>
+			      <td><?php echo $product_seven['crb_product_shablon_seven_price_metr'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
+<!-- eight shablon -->
+<?php if(carbon_get_the_post_meta('crb_products_shablon') === 'shablon_eight'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Цена за 1 метр</th>
+        	<th>Цена за 1 рулон</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$products_eight = carbon_get_the_post_meta('crb_products_shablon_eight');
+    		foreach( $products_eight as $product_eight ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $product_eight['crb_product_shablon_eight_title'] ?></td>
+			      <td></td>
+			      <td><?php echo $product_eight['crb_product_shablon_eight_price'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
+<!-- nine shablon -->
+<?php if(carbon_get_the_post_meta('crb_products_shablon') === 'shablon_nine'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Цена за 1 рулон</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$products_nine = carbon_get_the_post_meta('crb_products_shablon_nine');
+    		foreach( $products_nine as $product_nine ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $product_nine['crb_product_shablon_nine_title'] ?></td>
+			      <td><?php echo $product_nine['crb_product_shablon_nine_price'] ?></td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>
