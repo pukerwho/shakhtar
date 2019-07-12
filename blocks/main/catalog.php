@@ -55,6 +55,7 @@
 					<?php $main_table_cats = get_terms( array( 'taxonomy' => 'cats', 'parent' => 0, 'hide_empty' => false ) );
 					foreach ( $main_table_cats as $main_table_cat ): ?>
 						<?php if ($main_table_cat->count === 0): ?>
+							2
 							<div id="tableShow-<?php echo $main_table_cat->term_id ?>" class="tabcontent">
 								<!-- first shablon -->
 								<?php if(carbon_get_term_meta($main_table_cat->term_id, 'crb_cats_products_shablon') === 'cats_shablon_first'): ?>
