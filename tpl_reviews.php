@@ -19,9 +19,14 @@ Template Name: Страница ОТЗЫВЫ
 </div>
 
 <div class="container">
-	<div class="row">
+	<div class="row mb-5">
 		<div class="col-md-12">
 			Отзывы
+		</div>
+	</div>
+	<div class="row pb-5">
+		<div class="col-md-12">
+			<?php comments_template(); ?> 
 		</div>
 	</div>
 </div>
