@@ -56,7 +56,7 @@
 					foreach ( $main_table_cats as $main_table_cat ): ?>
 						<?php if ($main_table_cat->count === 0): ?>
 							2
-							<div id="tableShow-<?php echo $main_table_cat->term_id ?>" class="tabcontent">
+							<div id="tableShow-<?php echo $main_table_cat->term_id ?>" class="tabcontent test-tax">
 								<!-- first shablon -->
 								<?php if(carbon_get_term_meta($main_table_cat->term_id, 'crb_cats_products_shablon') === 'cats_shablon_first'): ?>
 									<div class="table-responsive">
@@ -303,7 +303,7 @@
 							'post_status' => 'publish'
 						) );
 						if ($custom_query_catalog_products->have_posts()) : while ($custom_query_catalog_products->have_posts()) : $custom_query_catalog_products->the_post(); ?>
-							<div id="tableShow-<?php echo get_the_id(); ?>" class="tabcontent">
+							<div id="tableShow-<?php echo get_the_id(); ?>" class="tabcontent test-product">
 								<?php the_title(); ?>
 								<?php get_template_part('blocks/products/templates') ?>
 							</div>
