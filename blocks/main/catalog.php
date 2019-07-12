@@ -299,7 +299,8 @@
 					<?php
 						$custom_query_catalog_products = new WP_Query( array( 
 							'post_type' => 'products',
-							'post_status' => 'publish'
+							'post_status' => 'publish',
+							'posts_per_page' => -1,
 						) );
 						if ($custom_query_catalog_products->have_posts()) : while ($custom_query_catalog_products->have_posts()) : $custom_query_catalog_products->the_post(); ?>
 							<div id="tableShow-0<?php echo get_the_id(); ?>" class="tabcontent test-product">
