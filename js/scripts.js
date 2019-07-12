@@ -70,7 +70,7 @@ $('.shablon_five').each(function(){
   var fiveTonna = $(this).find('.shablon_five-tonna');
   var fiveTonnaValue = fiveTonna.text();
   
-  fivePrice = fiveTonnaValue/(fiveVesValue*1000);
+  fivePrice = (fiveTonnaValue/1000)*fiveVesValue;
   fivePrice = fivePrice.toFixed(2);
   var fivePriceHtml = $(this).find('.shablon_five-price');
   fivePriceHtml.html(fivePrice);
