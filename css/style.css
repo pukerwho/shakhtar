@@ -10104,6 +10104,7 @@ tbody td {
   -ms-flex-preferred-size: 70%;
   flex-basis: 70%; }
 .main_catalog__click-active {
+  font-family: 'Roboto-Bold';
   font-weight: 700; }
 
 .home .table-responsive {
