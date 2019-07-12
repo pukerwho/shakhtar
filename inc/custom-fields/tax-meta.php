@@ -94,6 +94,7 @@ function crb_term_options() {
         ->add_fields( array(
           Field::make( 'text', 'crb_cats_product_shablon_six_title', 'Наименование' ),
           Field::make( 'text', 'crb_cats_product_shablon_six_weight_metr', 'Вес м/п кг' ),
+          Field::make( 'text', 'crb_cats_product_shablon_six_price_metr', 'Цена за 1м.пог' ),
           Field::make( 'text', 'crb_cats_product_shablon_six_price_tonna', 'Цена за 1 бухту (1т)' ),
       ) )->set_conditional_logic( array(
         'relation' => 'AND',

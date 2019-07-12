@@ -210,7 +210,7 @@
 											    <tr class="shablon_six">
 											      <td><?php echo $cats_product_six['crb_cats_product_shablon_six_title'] ?></td>
 											      <td class="shablon_six-ves"><?php echo $cats_product_six['crb_cats_product_shablon_six_weight_metr'] ?></td>
-											      <td class="shablon_six-price"></td>
+											      <td class="shablon_six-price"><?php echo $cats_product_six['crb_cats_product_shablon_six_price_metr'] ?></td>
 											      <td class="shablon_six-tonna"><?php echo $cats_product_six['crb_cats_product_shablon_six_price_tonna'] ?></td>
 											    </tr>
 										    <?php endforeach; ?>

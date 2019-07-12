@@ -77,17 +77,17 @@ $('.shablon_five').each(function(){
 });
 
 //Шестой шаблон калькулятор
-$('.shablon_six').each(function(){
-  var sixVes = $(this).find('.shablon_six-ves');
-  var sixVesValue = sixVes.text();
-  var sixTonna = $(this).find('.shablon_six-tonna');
-  var sixTonnaValue = sixTonna.text();
+// $('.shablon_six').each(function(){
+//   var sixVes = $(this).find('.shablon_six-ves');
+//   var sixVesValue = sixVes.text();
+//   var sixTonna = $(this).find('.shablon_six-tonna');
+//   var sixTonnaValue = sixTonna.text();
   
-  sixPrice = (sixTonnaValue/1000)*sixVesValue;
-  sixPrice = sixPrice.toFixed(2);
-  var sixPriceHtml = $(this).find('.shablon_six-price');
-  sixPriceHtml.html(sixPrice);
-});
+//   sixPrice = (sixTonnaValue/1000)*sixVesValue;
+//   sixPrice = sixPrice.toFixed(2);
+//   var sixPriceHtml = $(this).find('.shablon_six-price');
+//   sixPriceHtml.html(sixPrice);
+// });
 
 //Восьмой шаблон калькулятор
 $('.shablon_eight').each(function(){
