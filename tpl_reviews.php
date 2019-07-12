@@ -20,8 +20,8 @@ Template Name: Страница ОТЗЫВЫ
 
 <div class="container">
 	<div class="row mb-5">
-		<div class="col-md-12">
-			Отзывы
+		<div class="col-md-12 text-center">
+			<h2>Отзывы</h2>
 		</div>
 	</div>
 	<div class="row pb-5">
