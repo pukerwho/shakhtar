@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div class="single__hero mb-5" style="background: url('<?php echo get_the_post_thumbnail_url(); ?>');background-size: cover; -webkit-background-size: cover; background-position: top;">
+	<div class="single__hero mb-5" style="background: url(<?php echo carbon_get_term_meta(get_queried_object_id(), 'crb_cats_img') ?>);background-size: cover; -webkit-background-size: cover; background-position: top;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
