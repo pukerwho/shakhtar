@@ -135,7 +135,8 @@ function showTable(evt, tabName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace("main_catalog__click-active", "");
   }
-  document.getElementById(tabName).style.display = "block";
+  $('.'+tabName).css({'display':'block'});
+  // document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " main_catalog__click-active";
   if ($(document).width() > 760) {
     var targetScroll =  $('#catalog-right').offset().top;
