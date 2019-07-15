@@ -10935,6 +10935,8 @@ html.lb-disable-scrolling {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
+    .main_catalog__left-sub li {
+      padding: 15px 30px 15px 30px; }
     .main_catalog__left tbody {
       color: #191b1c; }
       .main_catalog__left tbody tr {
