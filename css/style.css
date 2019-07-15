@@ -9927,6 +9927,15 @@ summary {
   line-height: 1;
   opacity: 0.05; }
 
+.breadcrumbs {
+  position: relative;
+  color: #ffffff;
+  z-index: 2; }
+  .breadcrumbs a {
+    color: #f27022; }
+    .breadcrumbs a:hover {
+      opacity: 0.8; }
+
 .swiper-button-next, .swiper-button-prev {
   width: 40px;
   height: 60px;
@@ -10915,10 +10924,41 @@ html.lb-disable-scrolling {
       .welcome__item-button:last-of-type {
         margin-bottom: 0; }
 
+  .h2-after {
+    top: -25px;
+    font-size: 58px; }
+
+  .order__button .welcome__item-button {
+    width: auto; }
+
+  .main_catalog__left {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    .main_catalog__left tbody {
+      color: #191b1c; }
+      .main_catalog__left tbody tr {
+        background-color: #ffffff; }
+        .main_catalog__left tbody tr:nth-child(2n) {
+          background-color: #eeeeee; }
+  .main_catalog__right {
+    display: none; }
+
+  .whyus__sale {
+    position: relative;
+    top: 0;
+    margin-top: 2rem; }
+
   .footer__item {
     margin-bottom: 40px; }
 
   .swiper-welcome-next, .swiper-welcome-prev {
-    display: none; } }
+    display: none; }
+
+  .tabcontent:first-of-type {
+    display: none; }
+
+  .callback__box {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

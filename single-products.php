@@ -8,6 +8,14 @@
 					<div class="single__hero-title">
 						<?php the_title(); ?>
 					</div>
+					<div class="breadcrumbs">
+						<?php 
+						$current_id = get_the_id();
+						$parent_cats = get_the_terms( $current_id, 'cats' );
+						foreach ( $parent_cats as $parent_cat ): ?>
+							<span typeof="v:Breadcrumb"> <a href="<?php echo home_url(); ?>" rel="v:url" property="v:title">Главная</a> › </span> <span typeof="v:Breadcrumb"> <a href="<?php echo home_url(); ?>/cats/<?php echo $parent_cat->slug ?>" rel="v:url" property="v:title"><?php echo $parent_cat->name ?></a> </span> › </span> <span typeof="v:Breadcrumb"><?php the_title(); ?></span>
+						<?php endforeach; ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -26,15 +34,15 @@
 			</div>
 		</div>
 	</div>
-	
-
 <?php endwhile; else: ?>
 	<p><?php _e('Ничего не найдено'); ?></p>
 <?php endif; ?>
 
-<div class="d-flex justify-content-center mb-5">
-	<div class="welcome__item-button callback">
-		Заказать
+<div class="order__button">
+	<div class="d-flex justify-content-center mb-5">
+		<div class="welcome__item-button callback">
+			Заказать
+		</div>
 	</div>
 </div>
 

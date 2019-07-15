@@ -137,10 +137,12 @@ function showTable(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " main_catalog__click-active";
-  var targetScroll =  $('#catalog-right').offset().top;
-  $('html, body').animate({
-      scrollTop: (targetScroll - 100)
-  }, 300);
+  if ($(document).width() > 760) {
+    var targetScroll =  $('#catalog-right').offset().top;
+    $('html, body').animate({
+        scrollTop: (targetScroll - 100)
+    }, 300);
+  }
 }
 
 //Callback Form Open

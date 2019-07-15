@@ -11,16 +11,18 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="whyus__sale">
-					<div class="whyus__sale-title mb-4">
-						Выгодное предложение!
-					</div>
-					<div class="whyus__sale-text mb-4">
-						Специально для посетителей нашего сайта - мы подготовили отличную скидку. Бесплатная доставка по городу при заказе от 29 900 грн.
-					</div>
-					<div class="whyus__sale-button">
-						<div class="welcome__item-button callback">
-							напишите нам
+				<div class="pc-show">
+					<div class="whyus__sale">
+						<div class="whyus__sale-title mb-4">
+							Выгодное предложение!
+						</div>
+						<div class="whyus__sale-text mb-4">
+							Специально для посетителей нашего сайта - мы подготовили отличную скидку. Бесплатная доставка по городу при заказе от 29 900 грн.
+						</div>
+						<div class="whyus__sale-button">
+							<div class="welcome__item-button callback">
+								напишите нам
+							</div>
 						</div>
 					</div>
 				</div>
@@ -51,6 +53,25 @@
 				</div>
 				<?php endforeach; ?>
 			<?php endforeach; ?>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="mobile-show">
+					<div class="whyus__sale">
+						<div class="whyus__sale-title mb-4">
+							Выгодное предложение!
+						</div>
+						<div class="whyus__sale-text mb-4">
+							Специально для посетителей нашего сайта - мы подготовили отличную скидку. Бесплатная доставка по городу при заказе от 29 900 грн.
+						</div>
+						<div class="whyus__sale-button">
+							<div class="welcome__item-button callback">
+								напишите нам
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

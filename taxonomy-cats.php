@@ -6,6 +6,9 @@
 					<div class="single__hero-title">
 						<?php single_term_title(); ?>
 					</div>
+					<div class="breadcrumbs">
+						<span typeof="v:Breadcrumb"> <a href="<?php echo home_url(); ?>" rel="v:url" property="v:title">Главная</a> › </span> <span typeof="v:Breadcrumb"> <a href="<?php echo get_page_url('tpl_catalog') ?>" rel="v:url" property="v:title">Каталог</a> </span> › </span> <span typeof="v:Breadcrumb"><?php single_term_title(); ?></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -62,9 +65,11 @@
 			</div>
 		<?php endif; ?>
 	</div>
-	<div class="d-flex justify-content-center mb-5">
-		<div class="welcome__item-button callback">
-			Заказать
+	<div class="order__button">
+		<div class="d-flex justify-content-center mb-5">
+			<div class="welcome__item-button callback">
+				Заказать
+			</div>
 		</div>
 	</div>
 	<section id="main_whyus">
