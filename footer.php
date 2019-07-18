@@ -110,7 +110,7 @@
                 <img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="20px">
               </div>
               <div class="callback__title">
-                Обратная связь
+                Оставить заявку
               </div>
               <div class="callback__line"></div>
               <div class="callback__form">
