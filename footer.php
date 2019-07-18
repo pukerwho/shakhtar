@@ -60,8 +60,8 @@
                   <a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_viber') ?>" target="_blank" class="mr-3">
                     <img src="<?php bloginfo('template_url') ?>/img/viber.svg" alt="">
                   </a>
-                  <a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_whatsapp') ?>" target="_blank">
-                    <img src="<?php bloginfo('template_url') ?>/img/whatsapp.svg" alt="">
+                  <a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_telegram') ?>" target="_blank">
+                    <img src="<?php bloginfo('template_url') ?>/img/telegram.svg" alt="">
                   </a>
                 </div>
     					</div>

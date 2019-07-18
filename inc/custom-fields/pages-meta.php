@@ -40,7 +40,7 @@ function crb_page_theme_options() {
           Field::make( 'text', 'crb_contact_email', 'Email' ),
       )),
       Field::make( 'text', 'crb_contact_time', 'Время работы' ),
-      Field::make( 'text', 'crb_contact_whatsapp', 'Whatsapp' ),
+      Field::make( 'text', 'crb_contact_telegram', 'Telegram' ),
       Field::make( 'text', 'crb_contact_viber', 'Viber' ),
     ) );
 }

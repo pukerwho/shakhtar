@@ -9734,6 +9734,12 @@ button.swiper-pagination-bullet {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
+.header__phones a {
+  position: relative; }
+  .header__phones a:after {
+    content: ';'; }
+  .header__phones a:last-of-type:after {
+    content: ''; }
 
 @-webkit-keyframes headerfixed {
   from {

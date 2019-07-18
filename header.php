@@ -39,12 +39,12 @@
                   ];
                   $contact_pages = get_posts( $args_contact_page );
                   foreach ( $contact_pages as $contact_page ): ?>
-                  <li>
+                  <li class="header__phones">
                     <img src="<?php bloginfo('template_url') ?>/img/phone.svg" alt="" width="15px">
                     <?php
                     $contact_phones = carbon_get_post_meta($contact_page, 'crb_contact_phones' );
                     foreach ( $contact_phones  as $contact_phone ): ?>
-                      <a href="tel:<?php echo $contact_phone['crb_contact_phone'] ?>"><?php echo $contact_phone['crb_contact_phone'] ?></a>;
+                      <a href="tel:<?php echo $contact_phone['crb_contact_phone'] ?>"><?php echo $contact_phone['crb_contact_phone'] ?></a>
                     <?php endforeach; ?>
                   </li>
                   <li>
@@ -66,8 +66,8 @@
                 <a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_viber') ?>" target="_blank" class="mr-3">
                   <img src="<?php bloginfo('template_url') ?>/img/viber.svg" alt="">
                 </a>
-                <a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_whatsapp') ?>" target="_blank">
-                  <img src="<?php bloginfo('template_url') ?>/img/whatsapp.svg" alt="">
+                <a href="<?php echo carbon_get_post_meta($contact_page, 'crb_contact_telegram') ?>" target="_blank">
+                  <img src="<?php bloginfo('template_url') ?>/img/telegram.svg" alt="">
                 </a>
               </div>
             </div>
