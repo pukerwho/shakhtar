@@ -137,11 +137,12 @@
 												 		<thead class="thead">
 												 			<tr>
 											          <th>Наименование</th>
+											          <th>Ширина общ.</th>
+											          <th>Ширина полезн.</th>
 											        	<th>Толщ., мм</th>
 											        	<th>Цинк, грн/м2</th>
 											        	<th>Полиэстер, грн/м2</th>
 											        	<th>Матполиэстер, грн/м2</th>
-											        	<th>Структурный дуб, грн/м2</th>
 											        </tr>
 											      </thead>
 											      <tbody>
@@ -150,11 +151,12 @@
 											    		foreach( $cats_products_fourth as $cats_product_fourth ): ?>
 														    <tr class="tr-line">
 														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_title'] ?></td>
+														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_shirinaobsh'] ?></td>
+														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_shirinaplz'] ?></td>
 														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_tolshina'] ?></td>
 														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_zink'] ?></td>
 														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_poliestr'] ?></td>
 														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_matpoliestr'] ?></td>
-														      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_price_strdub'] ?></td>
 														    </tr>
 													    <?php endforeach; ?>
 													  </tbody>
@@ -292,6 +294,49 @@
 													</table>
 												</div>
 											<?php endif; ?>
+											<!-- ten shablon -->
+											<?php if(carbon_get_term_meta($main_cat->term_id, 'crb_cats_products_shablon') === 'cats_shablon_ten'): ?>
+												<div class="table-responsive">
+												 	<table>
+												 		<thead class="thead">
+												 			<tr>
+											          <th>Наименование</th>
+											        	<th>86</th>
+											        	<th>96</th>
+											        	<th>125</th>
+											        	<th>156</th>
+											        	<th>178</th>
+											        	<th>208</th>
+											        	<th>250</th>
+											        	<th>312</th>
+											        	<th>416</th>
+											        	<th>625</th>
+											        	<th>1250</th>
+											        </tr>
+											      </thead>
+											      <tbody>
+											      	<?php 
+											    		$cats_products_ten = carbon_get_term_meta($main_cat->term_id, 'crb_cats_products_shablon_ten');
+											    		foreach( $cats_products_ten as $cats_product_ten ): ?>
+														    <tr class="tr-line">
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_title'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_a'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_b'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_c'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_d'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_e'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_f'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_g'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_h'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_i'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_j'] ?></td>
+														      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_k'] ?></td>
+														    </tr>
+													    <?php endforeach; ?>
+													  </tbody>
+													</table>
+												</div>
+											<?php endif; ?>
 										</div>
 									</div>
 							<?php endif; ?>
@@ -385,11 +430,12 @@
 									 		<thead class="thead">
 									 			<tr>
 								          <th>Наименование</th>
+								          <th>Ширина общ.</th>
+								          <th>Ширина полезн.</th>
 								        	<th>Толщ., мм</th>
 								        	<th>Цинк, грн/м2</th>
 								        	<th>Полиэстер, грн/м2</th>
 								        	<th>Матполиэстер, грн/м2</th>
-								        	<th>Структурный дуб, грн/м2</th>
 								        </tr>
 								      </thead>
 								      <tbody>
@@ -398,11 +444,12 @@
 								    		foreach( $cats_products_fourth as $cats_product_fourth ): ?>
 											    <tr class="tr-line">
 											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_title'] ?></td>
+											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_shirinaobsh'] ?></td>
+											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_shirinaplz'] ?></td>
 											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_tolshina'] ?></td>
 											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_zink'] ?></td>
 											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_poliestr'] ?></td>
 											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_matpoliestr'] ?></td>
-											      <td><?php echo $cats_product_fourth['crb_cats_product_shablon_fourth_price_strdub'] ?></td>
 											    </tr>
 										    <?php endforeach; ?>
 										  </tbody>
@@ -534,6 +581,49 @@
 											    <tr class="tr-line">
 											      <td><?php echo $cats_product_nine['crb_cats_product_shablon_nine_title'] ?></td>
 											      <td><?php echo $cats_product_nine['crb_cats_product_shablon_nine_price'] ?></td>
+											    </tr>
+										    <?php endforeach; ?>
+										  </tbody>
+										</table>
+									</div>
+								<?php endif; ?>
+								<!-- ten shablon -->
+								<?php if(carbon_get_term_meta($main_table_cat->term_id, 'crb_cats_products_shablon') === 'cats_shablon_ten'): ?>
+									<div class="table-responsive">
+									 	<table>
+									 		<thead class="thead">
+									 			<tr>
+								          <th>Наименование</th>
+								        	<th>86</th>
+								        	<th>96</th>
+								        	<th>125</th>
+								        	<th>156</th>
+								        	<th>178</th>
+								        	<th>208</th>
+								        	<th>250</th>
+								        	<th>312</th>
+								        	<th>416</th>
+								        	<th>625</th>
+								        	<th>1250</th>
+								        </tr>
+								      </thead>
+								      <tbody>
+								      	<?php 
+								    		$cats_products_ten = carbon_get_term_meta($main_table_cat->term_id, 'crb_cats_products_shablon_ten');
+								    		foreach( $cats_products_ten as $cats_product_ten ): ?>
+											    <tr class="tr-line">
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_title'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_a'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_b'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_c'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_d'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_e'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_f'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_g'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_h'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_i'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_j'] ?></td>
+											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_k'] ?></td>
 											    </tr>
 										    <?php endforeach; ?>
 										  </tbody>

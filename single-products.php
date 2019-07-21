@@ -34,17 +34,28 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="order__button">
+		<div class="d-flex justify-content-center mb-5">
+			<div class="welcome__item-button callback">
+				Заказать
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="lead">
+					<?php the_content(); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+
 <?php endwhile; else: ?>
 	<p><?php _e('Ничего не найдено'); ?></p>
 <?php endif; ?>
-
-<div class="order__button">
-	<div class="d-flex justify-content-center mb-5">
-		<div class="welcome__item-button callback">
-			Заказать
-		</div>
-	</div>
-</div>
 
 <section id="main_whyus">
 	<?php get_template_part('blocks/main/whyus') ?>

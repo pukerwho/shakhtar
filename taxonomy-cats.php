@@ -72,6 +72,15 @@
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col-md-12">
+				<div class="lead">
+					<?php echo carbon_get_term_meta(get_queried_object_id(), 'crb_cats_content') ?>
+				</div>
+			</div>
+		</div>
+	</div>
 	<section id="main_whyus">
 		<?php get_template_part('blocks/main/whyus') ?>
 	</section>
