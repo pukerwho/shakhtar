@@ -117,6 +117,7 @@
         	<th>Цена за м2</th>
         	<th>Цена за 1 лист</th>
         	<th>Цена за 1 тонну</th>
+        	<th style="display: none"></th>
         </tr>
       </thead>
       <tbody>
@@ -127,8 +128,11 @@
 			      <td><?php echo $product_five['crb_product_shablon_five_title'] ?></td>
 			      <td class="shablon_five-ves"><?php echo $product_five['crb_product_shablon_five_ves'] ?></td>
 			      <td class="shablon_five-price"></td>
-			      <td><?php echo $product_five['crb_product_shablon_five_price_list'] ?></td>
+			      <td class="shablon_five-pricelist"></td>
 			      <td class="shablon_five-tonna"><?php echo $product_five['crb_product_shablon_five_price_tonna'] ?></td>
+			      <td class="shablon_five-koef" style="display: none">
+	    				<?php echo $product_five['crb_product_shablon_five_koef'] ?>
+	    			</td>
 			    </tr>
 		    <?php endforeach; ?>
 		  </tbody>

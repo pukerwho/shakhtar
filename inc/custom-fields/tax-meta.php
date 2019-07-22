@@ -82,8 +82,13 @@ function crb_term_options() {
           Field::make( 'text', 'crb_cats_product_shablon_five_title', 'Наименование' ),
           Field::make( 'text', 'crb_cats_product_shablon_five_ves', 'Вес 1м/кв' ),
           Field::make( 'text', 'crb_cats_product_shablon_five_price_metr', 'Цена за м2' ),
-          Field::make( 'text', 'crb_cats_product_shablon_five_price_list', 'Цена за 1 лист' ),
           Field::make( 'text', 'crb_cats_product_shablon_five_price_tonna', 'Цена за 1 тонну' ),
+          Field::make( 'select', 'crb_cats_product_shablon_five_koef', 'Коэффициент' )->set_options( array(
+              '2' => 2,
+              '3.125' => 3.125,
+              '9' => 9,
+              '12' => 12,
+          ) ),
       ) )->set_conditional_logic( array(
         'relation' => 'AND',
           array(

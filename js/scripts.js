@@ -69,10 +69,15 @@ $('.shablon_five').each(function(){
   var fiveVesValue = fiveVes.text();
   var fiveTonna = $(this).find('.shablon_five-tonna');
   var fiveTonnaValue = fiveTonna.text();
+  var fiveKoef = $(this).find('.shablon_five-koef');
+  var fiveKoefValue = fiveKoef.text();
   
   fivePrice = (fiveTonnaValue/1000)*fiveVesValue;
   fivePrice = fivePrice.toFixed(2);
   var fivePriceHtml = $(this).find('.shablon_five-price');
+  fivePriceList = fivePrice*fiveKoefValue;
+  var fivePriceListHtml = $(this).find('.shablon_five-pricelist');
+  fivePriceListHtml.html(fivePriceList);
   fivePriceHtml.html(fivePrice);
 });
 
