@@ -82,8 +82,7 @@
             <div class="header__main-content">
               <a href="<?php echo home_url(); ?>">
                 <div class="header__logo">
-                  <img src="<?php bloginfo('template_url') ?>/img/logo.svg" alt="" width="50px">
-                  LOGO
+                  <img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="" height="54px">
                 </div>
               </a>
               <div class="header__menu">
