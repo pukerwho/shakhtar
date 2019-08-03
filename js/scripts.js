@@ -76,6 +76,7 @@ $('.shablon_five').each(function(){
   fivePrice = fivePrice.toFixed(2);
   var fivePriceHtml = $(this).find('.shablon_five-price');
   fivePriceList = fivePrice*fiveKoefValue;
+  fivePriceList = fivePriceList.toFixed(2);
   var fivePriceListHtml = $(this).find('.shablon_five-pricelist');
   fivePriceListHtml.html(fivePriceList);
   fivePriceHtml.html(fivePrice);
