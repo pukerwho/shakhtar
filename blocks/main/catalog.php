@@ -341,6 +341,33 @@
 													</table>
 												</div>
 											<?php endif; ?>
+											<!-- eleven shablon -->
+											<?php if(carbon_get_term_meta($main_cat->term_id, 'crb_cats_products_shablon') === 'cats_shablon_eleven'): ?>
+												<div class="table-responsive">
+												 	<table>
+												 		<thead class="thead">
+												 			<tr>
+											          <th>Наименование</th>
+											        	<th>Кол-во м/кг</th>
+											        	<th>Цена, грн/кг</th>
+											        	<th>Примечание</th>
+											        </tr>
+											      </thead>
+											      <tbody>
+											      	<?php 
+											    		$cats_products_eleven = carbon_get_term_meta($main_cat->term_id, 'crb_cats_products_shablon_eleven');
+											    		foreach( $cats_products_eleven as $cats_product_eleven ): ?>
+														    <tr class="tr-line">
+														      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_title'] ?></td>
+														      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_qty'] ?></td>
+														      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_price'] ?></td>
+														      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_notice'] ?></td>
+														    </tr>
+													    <?php endforeach; ?>
+													  </tbody>
+													</table>
+												</div>
+											<?php endif; ?>
 										</div>
 									</div>
 							<?php endif; ?>
@@ -632,6 +659,33 @@
 											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_i'] ?></td>
 											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_j'] ?></td>
 											      <td><?php echo $cats_product_ten['crb_cats_product_shablon_ten_k'] ?></td>
+											    </tr>
+										    <?php endforeach; ?>
+										  </tbody>
+										</table>
+									</div>
+								<?php endif; ?>
+								<!-- eleven shablon -->
+								<?php if(carbon_get_term_meta($main_table_cat->term_id, 'crb_cats_products_shablon') === 'cats_shablon_eleven'): ?>
+									<div class="table-responsive">
+									 	<table>
+									 		<thead class="thead">
+									 			<tr>
+								          <th>Наименование</th>
+								        	<th>Кол-во м/кг</th>
+								        	<th>Цена, грн/кг</th>
+								        	<th>Примечание</th>
+								        </tr>
+								      </thead>
+								      <tbody>
+								      	<?php 
+								    		$cats_products_eleven = carbon_get_term_meta($main_table_cat->term_id, 'crb_cats_products_shablon_eleven');
+								    		foreach( $cats_products_eleven as $cats_product_eleven ): ?>
+											    <tr class="tr-line">
+											      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_title'] ?></td>
+											      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_qty'] ?></td>
+											      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_price'] ?></td>
+											      <td><?php echo $cats_product_eleven['crb_cats_product_shablon_eleven_notice'] ?></td>
 											    </tr>
 										    <?php endforeach; ?>
 										  </tbody>

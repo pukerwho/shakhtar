@@ -20,6 +20,7 @@ function crb_post_theme_options() {
           'shablon_eight' => 'Цена за 1 метр Цена за 1 рулон',
           'shablon_nine' => 'Цена за 1 рулон',
           'shablon_ten' => 'Для гибочных элементов',
+          'shablon_eleven' => 'Проволока Отожженная',
       ) ),
       Field::make( 'complex', 'crb_products_shablon_first', 'Продукты' )
 	    	->add_fields( array(
@@ -166,6 +167,20 @@ function crb_post_theme_options() {
           array(
             'field' => 'crb_products_shablon',
             'value' => 'shablon_ten',
+            'compare' => '=',
+          ),
+        ) ),
+      Field::make( 'complex', 'crb_products_shablon_eleven', 'Продукты' )
+        ->add_fields( array(
+          Field::make( 'text', 'crb_product_shablon_eleven_title', 'Наименование' ),
+          Field::make( 'text', 'crb_product_shablon_eleven_qty', 'Кол-во м/кг' ),
+          Field::make( 'text', 'crb_product_shablon_eleven_price', 'Цена,  грн/кг' ),
+          Field::make( 'text', 'crb_product_shablon_eleven_notice', 'Примечание' ),
+      ) )->set_conditional_logic( array(
+        'relation' => 'AND',
+          array(
+            'field' => 'crb_products_shablon',
+            'value' => 'shablon_eleven',
             'compare' => '=',
           ),
         ) ),

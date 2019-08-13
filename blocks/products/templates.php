@@ -284,3 +284,30 @@
 		</table>
 	</div>
 <?php endif; ?>
+<!-- eleven shablon -->
+<?php if(carbon_get_the_post_meta('crb_products_shablon') === 'shablon_eleven'): ?>
+	<div class="table-responsive">
+	 	<table>
+	 		<thead class="thead">
+	 			<tr>
+          <th>Наименование</th>
+        	<th>Кол-во м/кг</th>
+        	<th>Цена, грн/кг</th>
+        	<th>Примечание</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<?php 
+    		$products_eleven = carbon_get_the_post_meta('crb_products_shablon_eleven');
+    		foreach( $products_eleven as $product_eleven ): ?>
+			    <tr class="tr-line">
+			      <td><?php echo $product_eleven['crb_product_shablon_eleven_title'] ?></td>
+			      <td><?php echo $product_eleven['crb_product_shablon_eleven_qty'] ?></td>
+			      <td><?php echo $product_eleven['crb_product_shablon_eleven_price'] ?></td>
+			      <td><?php echo $product_eleven['crb_product_shablon_eleven_notice'] ?></td>
+			    </tr>
+		    <?php endforeach; ?>
+		  </tbody>
+		</table>
+	</div>
+<?php endif; ?>
